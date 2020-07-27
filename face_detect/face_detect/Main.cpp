@@ -18,14 +18,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	while (1)
 	{
 
-
+		uchar a = '225';
+		std::cout << int(a) << std::endl;
 		captue >> frame;
 		imshow("Œ“µƒ…„œÒÕ∑", frame);
 		cvtColor(frame, grayframe, CV_RGB2GRAY);
 		face_number = DetectFaceEyes(frame, grayframe);
 
 
-		waitKey(30);
+		waitKey(0);
 		//cvDestroyWindow(pstrWindowsBinaryTitle);
 	}
 	return 0;
